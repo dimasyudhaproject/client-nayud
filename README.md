@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NaYud
+
+NaYud is a cutting-edge project leveraging multiple modern technologies for a robust and scalable application. The core tech stack includes Next.js, TypeScript, Bun, and more. With a firm commitment to best practices, the project employs CircleCI for continuous integration, Docker for containerization, Helm charts for orchestration, and semantic versioning to ensure releases are coherent and meaningful.
+
+## Table of Contents
+
+1. [Features](#features)
+2. [Pre-requisites](#pre-requisites)
+3. [Getting Started](#getting-started)
+   - [Local Setup](#local-setup)
+   - [Docker Setup](#docker-setup)
+4. [Contributing](#contributing)
+   - [Pull Requests](#pull-requests)
+   - [Issues](#issues)
+5. [Documentation](#documentation)
+   - [Changelog](#changelog)
+6. [License](#license)
+
+## Features
+
+- **Next.js**: An optimized JavaScript framework designed for a smoother developer experience and superior user interface.
+- **TypeScript**: A superset of JavaScript, offering static types.
+- **Bun**: An all-in-one JavaScript toolkit.
+- **SASS**: A powerful pre-processing CSS framework to make your CSS supercharged.
+- **CircleCI**: A continuous integration tool to ensure code quality and deployment reliability.
+- **Docker**: A platform used to develop, ship, and run applications inside containers.
+- **Helm charts**: Orchestration tool to manage Kubernetes applications.
+- **Semantic Versioning**: Using the principles from [semantic-release](https://github.com/semantic-release/semantic-release), we ensure meaningful and coherent releases.
+- **ChatGPT Code Review**: Leveraging the [ChatGPT-CodeReview](https://github.com/anc95/ChatGPT-CodeReview) for automated code reviews.
+
+## Pre-requisites
+
+- [Git](https://git-scm.com)
+- [Bun](https://bun.sh)
+- [Docker](https://www.docker.com) (optional)
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+   ```sh
+   $ git clone https://github.com/dimasyudhatech/client-nayud.git -b master client-nayud
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. Enter into the project directory:
+   ```sh
+   $ cd client-nayud
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Local Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Install dependencies:
+   ```sh
+   $ bun i
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. Start the development server:
+   ```sh
+   $ bun start:dev
+   ```
 
-## Learn More
+### Docker Setup
 
-To learn more about Next.js, take a look at the following resources:
+1. Build the Docker image:
+   ```sh
+   $ docker build -t client-nayud:0.0.1 .
+   ```
+2. Run the container:
+   ```sh
+   $ docker run -dit -p 3000:3000 —name client-nayud client-nayud:0.0.1
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+We welcome and appreciate contributions from the community. Please check out our [CONTRIBUTING guidelines](https://github.com/dimasyudhatech/client-nayud/CONTRIBUTING.md).
 
-## Deploy on Vercel
+### [Pull Requests](https://github.com/dimasyudhatech/client-nayud/pulls)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+For adding new features or making changes, submit a pull request.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### [Issues](https://github.com/dimasyudhatech/client-nayud/issues)
+
+Encounter a bug or have a suggestion? Open a new issue.
+
+## Documentation
+
+### [Changelog](https://github.com/dimasyudhatech/client-nayud/CHANGELOG.md)
+
+To see the list of recent changes, check the changelog.
+
+## License
+
+This project is licensed under the terms specified in the [LICENSE](https://github.com/dimasyudhatech/client-nayud/LICENSE) file.
